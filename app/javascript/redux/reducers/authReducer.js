@@ -8,7 +8,6 @@ export const logout = createAsyncThunk(
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-CSRF-Token': csrfToken,
                     'Accept': 'application/json'
                 },
                 credentials: 'include'
@@ -35,7 +34,6 @@ export const login = createAsyncThunk(
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'X-CSRF-Token': csrfToken,
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify(body),
