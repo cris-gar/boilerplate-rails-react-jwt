@@ -2,7 +2,7 @@
 
 module Users
   class SessionsController < Devise::SessionsController
-    before_action :authenticate_user_from_token!, only: %i[validate_token]
+    skip_before_action :authenticate_user_from_token!, only: %i[create destroy]
 
     respond_to :json
 
