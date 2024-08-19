@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
-import { login, checkAuth, logout } from '../../redux/slices/authSlice'
+import { login, checkAuth, logout } from '../../redux/reducers/authReducer'
 
-
-const Login = props => {
+const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const dispatch = useDispatch();
