@@ -35,7 +35,7 @@ gem "devise"
 gem "devise-jwt"
 
 # add PG for database
-gem "pg", "~> 1.5", ">= 1.5.7"
+gem "pg", "~> 1.5"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
